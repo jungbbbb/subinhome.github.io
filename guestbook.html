@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Guestbook</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="banner"></div>
+    <h1>정수빈</h1>
+    <p>광운대학교, 화학과 2학년</p>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="portfolio.html">PORTFOLIO</a>
+      <a href="resume.html">RESUME</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="guestbook.html">GUESTBOOK</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>방명록 ✍️</h2>
+      <form id="guestbook-form">
+        <label>이름:<br><input type="text" name="name" required></label><br><br>
+        <label>메시지:<br><textarea name="message" rows="4" required></textarea></label><br><br>
+        <button type="submit">방명록 남기기</button>
+      </form>
+
+      <hr>
+
+      <div id="guestbook-entries">
+        <h3>📒 남겨진 메시지</h3>
+        <ul id="entries-list"></ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
